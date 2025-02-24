@@ -1,0 +1,15 @@
+const response = await fetch(
+  'https://api.mindstudio.ai/developer/v2/workers/run',
+  {
+    method: 'POST',
+    headers: {
+      Authorization: 'Bearer skdfbb3f41d52f64222962ec71bb862dabd9cabce87bcd15d1d3c44930a38aa3fdd0bc43c5514a3ad5f828bf81d3bb0aa10c4a0142b5f2d46902db8342417e9e9c',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      workerId: '90892726-b7c1-4275-8552-b5ab8f92f9c9',
+      variables: {}
+    }),
+  },
+);
+const data = await response.json();
